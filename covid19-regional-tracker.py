@@ -170,8 +170,8 @@ if nome_provincia == "P.A. Trento":
     ax1_2.set_title("Evoluzione per " + nome_provincia + " (inc. {v:.0f})".format(v=nuovi_positivi_7_giorni/5.5))
 else:
     ax1_2.set_title("Evoluzione per " + nome_provincia)
-ax1_2.legend()
-ax1.legend()
+ax1_2.legend(loc='upper right')
+ax1.legend(loc='upper left')
 ax1_2.grid(True)
 ax1_2.xaxis.set_major_locator(mdates.MonthLocator(interval = 2))
 ax1_2.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))

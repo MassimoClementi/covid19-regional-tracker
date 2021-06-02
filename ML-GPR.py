@@ -66,6 +66,7 @@ plt.fill_between(
     label='GPR confidence area'
 )
 
+plt.ylim(bottom=0)
 plt.legend()
 plt.title("Gaussian Process Regression modelling")
 
